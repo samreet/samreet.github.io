@@ -8,7 +8,7 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "90px";
   }
 }
-var links = [{label: 'Management', bg: '#c0392b'}, 
+/*var links = [{label: 'Management', bg: '#c0392b'}, 
              {label: 'Administration', bg: '#16a085'}, 
              {label: 'link3', bg: '#8e44ad'}, 
              {label: 'link4', bg: '#27ae60'}, 
@@ -140,3 +140,4 @@ function setTransition(element, string) {
   element.style.OTransition = string;
   element.style.transition = string;
 }
+*/
