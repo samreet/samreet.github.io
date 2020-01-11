@@ -1,26 +1,10 @@
-(function(){
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
 
-  var button = document.getElementById('cn-button'),
-    wrapper = document.getElementById('cn-wrapper');
-
-    //open and close menu when the button is clicked
-  var open = false;
-  button.addEventListener('click', handler, false);
-  button.addEventListener('focus', handler, false);
-
-  function handler(){
-    if(!open){
-      this.innerHTML = "Close";
-      classie.add(wrapper, 'opened-nav');
-    }
-    else{
-      this.innerHTML = "Menu";
-    classie.remove(wrapper, 'opened-nav');
-    }
-    open = !open;
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
   }
-  function closeWrapper(){
-    classie.remove(wrapper, 'opened-nav');
-  }
-
-})();
+}
